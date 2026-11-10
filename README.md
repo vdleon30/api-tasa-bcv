@@ -1,12 +1,12 @@
 # Tasa BCV: ejemplos en PHP, Node y Python
 
-Cómo traer a tu sistema la tasa oficial del Banco Central de Venezuela (dólar y euro, con su Fecha Valor) y cómo convertir montos sin perder céntimos. Los ejemplos usan la [API de la tasa BCV de Órbita](https://__DOMINIO__/api-tasa-bcv?utm_source=github&utm_medium=readme), pero los consejos de la sección [Lo que hay que saber de la tasa BCV](#lo-que-hay-que-saber-de-la-tasa-bcv) sirven igual si la lees tú mismo de bcv.org.ve.
+Cómo traer a tu sistema la tasa oficial del Banco Central de Venezuela (dólar y euro, con su Fecha Valor) y cómo convertir montos sin perder céntimos. Los ejemplos usan la [API de la tasa BCV de Órbita](https://orbitave.com/api-tasa-bcv?utm_source=github&utm_medium=readme), pero los consejos de la sección [Lo que hay que saber de la tasa BCV](#lo-que-hay-que-saber-de-la-tasa-bcv) sirven igual si la lees tú mismo de bcv.org.ve.
 
 Ninguno necesita dependencias: PHP con curl y bcmath, Node 18 o más nuevo, Python 3 con su biblioteca estándar.
 
 ## Probarlo
 
-Pide tu llave por WhatsApp desde [la página de la API](https://__DOMINIO__/api-tasa-bcv?utm_source=github&utm_medium=readme) (los primeros 14 días son gratis) y ponla en una variable de entorno, nunca en el código:
+Pide tu llave por WhatsApp desde [la página de la API](https://orbitave.com/api-tasa-bcv?utm_source=github&utm_medium=readme) (los primeros 14 días son gratis) y ponla en una variable de entorno, nunca en el código:
 
 ```bash
 export BCV_API_KEY=bcv_tu_llave
@@ -34,7 +34,7 @@ USD 25.50 = Bs. 22777.04
 ## La petición
 
 ```bash
-curl https://__DOMINIO__/api/v1/rates/usd-ves \
+curl https://orbitave.com/api/v1/rates/usd-ves \
   -H "Authorization: Bearer $BCV_API_KEY"
 ```
 

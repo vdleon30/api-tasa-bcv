@@ -10,7 +10,7 @@ import urllib.error
 import urllib.request
 from decimal import ROUND_HALF_UP, Decimal
 
-API = "https://__DOMINIO__/api/v1"
+API = "https://orbitave.com/api/v1"
 
 
 def tasa_bcv(par="usd-ves", fecha=None):

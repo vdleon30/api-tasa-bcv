@@ -3,7 +3,7 @@
 // La tasa oficial del BCV y un monto en dólares pasado a bolívares.
 // Uso: BCV_API_KEY=bcv_... php tasa.php 25.50
 
-const API = 'https://__DOMINIO__/api/v1';
+const API = 'https://orbitave.com/api/v1';
 
 function tasaBcv(string $par = 'usd-ves', ?string $fecha = null): array
 {

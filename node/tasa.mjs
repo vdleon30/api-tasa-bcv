@@ -1,7 +1,7 @@
 // La tasa oficial del BCV y un monto en dólares pasado a bolívares (Node 18 o más nuevo, sin dependencias).
 // Uso: BCV_API_KEY=bcv_... node tasa.mjs 25.50
 
-const API = 'https://__DOMINIO__/api/v1';
+const API = 'https://orbitave.com/api/v1';
 
 export async function tasaBcv(par = 'usd-ves', fecha = null) {
   const url = `${API}/rates/${par}${fecha ? `?date=${fecha}` : ''}`;
